@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet</title>
+    <link rel="stylesheet" href="/static/Login.css">
+    <link rel="stylesheet" href="/static/shop.css">
+
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" /> -->
+    <!-- <link rel="stylesheet" href=   " https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+</head>
+
+<body>
+    {% include "Header.html" %}
+
+  
+
+    <section class="form-detail">
+        <form method="post">
+        {% csrf_token %}
+         <label>Subject1</label>
+         <input type="text" name="Subject1" class="form-control"/>
+         <br>
+         
+         <br>
+         <label>Subject2</label>
+         <input type="text" name="Subject2" class="form-control"/>
+         <br>
+
+         <label>Subject3</label>
+         <input type="text" name="Subject3" class="form-control"/>
+         <br>
+
+         <label>Subject4</label>
+         <input type="text" name="Subject4" class="form-control"/>
+         <br>
+
+         <label>Subject5</label>
+         <input type="text" name="Subject5" class="form-control"/>
+         <br>
+         
+         <button type="Submit">Calculate</button>
+         <br>
+
+         <label>Total</label>
+         <input type="text" value="{{total}}" class="form-control"/>
+        <br>
+         <label>Persentage</label>
+         <input type="text" value="{{persentage}}" class="form-control"/>
+
+         <br>
+         <label>Grade</label>
+         <input type="text" value="{{grade}}" class="form-control"/>
+
+        </form>       
+    </section>
+    <!-- footer section -->
+    {% include "Footer.html" %}
+</body>
+
+</html>
+

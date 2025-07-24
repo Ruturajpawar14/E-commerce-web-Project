@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website</title>
+    <link rel="stylesheet" href="/static/Login.css">
+    <link rel="stylesheet" href="/static/shop.css">
+
+    
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" /> -->
+    <!-- <link rel="stylesheet" href=   " https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+</head>
+<body>
+    {% include "Header.html" %}
+
+
+    <section class="banner16">
+        <h2>#cart</h2>
+    <p>Add your coupon code & SAVE upto 70%!</p>
+    </section>
+    
+
+    <section class="cart" id="">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td><a href="#"> <i class="fas  fa-times-circle"></i></a></td>
+                        <td><img class="img" src="/static/img/products/f1.jpg" alt=""></td>
+                        <td>Cartoon Astronaut T-shirts</td>
+                        <td>$118.19</td>
+                        <td><input type="number" value="1"></td>
+                        <td>$118.19</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#"> <i class="fas  fa-times-circle"></i></a></td>
+                        <td><img class="img" src="/static/img/products/f2.jpg" alt=""></td>
+                        <td>Cartoon Astronaut T-shirts</td>
+                        <td>$118.19</td>
+                        <td><input type="number" value="1"></td>
+                        <td>$118.19</td>
+                    </tr> <tr>
+                        <td><a href="#"> <i class="fas  fa-times-circle"></i></a></td>
+                        <td><img class="img" src="/static/img/products/f3.jpg" alt=""></td>
+                        <td>Cartoon Astronaut T-shirts</td>
+                        <td>$118.19</td>
+                        <td><input type="number" value="1"></td>
+                        <td>$118.19</td>
+                    </tr>
+                </tbody> 
+            </thead>
+        </table>
+    </section>
+
+    <section id="cart-add">
+        <div class="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter your Coupon">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+
+        <div class="subtotal">
+            <h3>Cart Totals </h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>$ 335</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+
+                <tr>
+                    <td><strong>Table</strong></td>
+                    <td><strong>$ 335</strong></td>
+
+                </tr>
+            </table>
+
+    <button class="button99">Proceed To checkout</button>
+        </div>
+    </section>
+
+
+
+
+
+    
+<!-- footer section -->
+
+{% include "Footer.html" %}
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,415 @@
+{% comment %} python manage.py runserver {% endcomment %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website</title>
+    <link rel="stylesheet" href="/static/Login.css">
+    
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" /> -->
+    <!-- <link rel="stylesheet" href=   " https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+</head>
+<body>
+    <script>
+        function myfunction(){
+            window.location.href="/shop";
+        }
+    </script>
+
+{% include "Header.html" %}
+
+<section class="hero">
+
+    <h4>Trade-in-offer</h4>
+    <h2>Super value deals</h2>
+    <h1>On all products</h1>
+    <p>save More with coupnes & up to 70% OFF!</p>
+    <button onclick="myfunction()" class="button1",>Shop Now</button>
+
+</section>
+
+
+<section class="feature">
+<div class="fbox">
+    <img src="/static/img/features/f1.png" alt="">  
+    <h6>Free Shiping</h6>
+</div>
+
+<div class="fbox">
+    <img src="/static/img/features/f2.png" alt="">
+    <h6>Online Order</h6>
+</div>
+<div class="fbox">
+    <img src="/static/img/features/f3.png" alt="">
+    <h6>Save Money</h6>
+</div>
+<div class="fbox">
+    <img src="/static/img/features/f5.png" alt="">
+    <h6>Happy Sell</h6>
+</div>
+<div class="fbox">
+    <img src="/static/img/features/f6.png" alt="">
+    <h6>24/7 Support</h6>
+</div>
+<div class="fbox">
+    <img src="/static/img/features/f4.png" alt="">
+    <h6>Promotions</h6>
+</div>
+</section>
+
+
+
+<section id="feature1" class="p1">
+
+    <div class="product1" class="p1">
+<h2>Feature Products</h2>
+<p>Summer Collection New Modern Design</p>
+
+<div class="pro-container">
+    <div class="pro" onclick="myfunction()">
+        <img src="/static/img/products/f1.jpg" alt="">
+        <div class="des">
+            <span>addidas</span>
+            <h5>Cartoon Asronaut T-shirt</h5>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+        </div>
+        <a href="#"><i class="fa  fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro" onclick="myfunction()">
+        <img src="/static/img/products/f2.jpg" alt="">
+        <div class="des">
+            <span>SEVENTEENSTITCH</span>
+            <h5>Men Regular</h5>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+        </div>
+        <a href="#"><i class="fa  fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro" onclick="myfunction()">
+        <img src="/static/img/products/f3.jpg" alt="">
+        <div class="des">
+            <span>ZONANZA</span>
+            <h5>Men slim fit</h5>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+        </div>
+        <a href="#"><i class="fa  fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro" onclick="myfunction()">
+        <img src="/static/img/products/f4.jpg" alt="">
+        <div class="des">
+            <span>SEVENTEENSTITCH</span>
+            <h5>Men Regular</h5>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+        </div>
+        <a href="#"><i class="fa  fa-shopping-cart cart"></i></a>
+    </div>
+</div>
+<br>
+<div class="pro-container">
+    <div class="pro" onclick="myfunction()">
+        <img src="/static/img/products/f5.jpg" alt="">
+        <div class="des">
+            <span>KATLINE</span>
+            <h5>Women Gown</h5>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+        </div>
+        <a href="#"><i class="fa  fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro" onclick="myfunction()">
+        <img src="/static/img/products/f6.jpg" alt="">
+        <div class="des">
+            <span>eWools</span>
+            <h5>Women Kaftan</h5>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+        </div>
+        <a href="#"><i class="fa  fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro" onclick="myfunction()">
+        <img src="/static/img/products/f7.jpg" alt="">
+        <div class="des">
+            <span>Fashion2ware</span>
+            <h5>Women Fit and flare</h5>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+        </div>
+        <a href="#"><i class="fa  fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro" onclick="myfunction()">
+        <img src="/static/img/products/f8.jpg" alt="">
+        <div class="des">
+            <span>Passion Jump</span>
+            <h5>Woomen Fit</h5>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+        </div>
+        <a href="#"><i class="fa  fa-shopping-cart cart"></i></a>
+    </div>
+</div>
+</div>
+</section>
+
+
+
+<section class="banner">
+    <h4>Repair Services</h4>
+    <h2>up to <span>70% Off</span> -All t-shirts & Accessories</h2>
+    <button onclick="myfunction()" id="button">Explore More</button>
+</section>
+
+
+
+
+
+<section id="feature1" class="p1" onclick="myfunction()">
+
+    <div class="product1" class="p1">
+<h2>New Arrivals</h2>
+<p>Summer Collection New Modern Design</p>
+
+<div class="pro-container">
+    <div class="pro">
+        <img src="/static/img/products/n1.jpg" alt="">
+        <div class="des">
+            <span>addidas</span>
+            <h5>Cartoon Asronaut T-shirt</h5>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+        </div>
+        <a href="#"><i class="fa  fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro">
+        <img src="/static/img/products/n2.jpg" alt="">
+        <div class="des">
+            <span>SEVENTEENSTITCH</span>
+            <h5>Men Regular</h5>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+        </div>
+        <a href="#"><i class="fa  fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro">
+        <img src="/static/img/products/n3.jpg" alt="">
+        <div class="des">
+            <span>ZONANZA</span>
+            <h5>Men slim fit</h5>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+        </div>
+        <a href="#"><i class="fa  fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro">
+        <img src="/static/img/products/n4.jpg" alt="">
+        <div class="des">
+            <span>SEVENTEENSTITCH</span>
+            <h5>Men Regular</h5>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+        </div>
+        <a href="#"><i class="fa  fa-shopping-cart cart"></i></a>
+    </div>
+</div>
+<br>
+<div class="pro-container">
+    <div class="pro">
+        <img src="/static/img/products/n5.jpg" alt="">
+        <div class="des">
+            <span>KATLINE</span>
+            <h5>Women Gown</h5>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+        </div>
+        <a href="#"><i class="fa  fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro">
+        <img src="/static/img/products/n6.jpg" alt="">
+        <div class="des">
+            <span>eWools</span>
+            <h5>Women Kaftan</h5>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+        </div>
+        <a href="#"><i class="fa  fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro">
+        <img src="/static/img/products/n7.jpg" alt="">
+        <div class="des">
+            <span>Fashion2ware</span>
+            <h5>Women Fit and flare</h5>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+        </div>
+        <a href="#"><i class="fa  fa-shopping-cart cart"></i></a>
+    </div>
+    <div class="pro">
+        <img src="/static/img/products/n8.jpg" alt="">
+        <div class="des">
+            <span>Passion Jump</span>
+            <h5>Woomen Fit</h5>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <h4>$78</h4>
+        </div>
+        <a href="#"><i class="fa  fa-shopping-cart cart"></i></a>
+    </div>
+</div>
+</div>
+</section>
+
+
+<section class="banner2">
+    <div class="banner-box1">
+        <h4>Crazy Deals</h4>
+        <h2>buy 1 get 1 free</h2>
+        <span>The best classic dresss is on sale at cara</span>
+    <button class="button3"><a href="https://www.myntra.com">Learn More</a></button>
+    
+
+    </div>
+
+    <div class="banner-box2">
+        <h4>Spring /Summer</h4>
+        <h2>upcomming season</h2>
+        <span>The best classic dresss is on sale at cara</span>
+        <button class="button3"><a href="https://www.myntra.com" >Collection</a></button>
+    </div>
+</section>
+
+<section class="banner3">
+    <div class="banner-box3">
+        <h2>SEASONAL SALE</h2>
+        <h3>winter Collection -50% OFF</h3>
+        <!-- <button class="button4">Collection</button> -->
+    </div>
+
+    <div class="banner-box4">
+        <h2>NEW FOOTWARE COLLECTION</h2>
+        <h3>Spring/ Summer 2024</h3>
+        <!-- <button class="button4">Collection</button> -->
+    </div>
+
+    <div class="banner-box5">
+        <h2>T-SHIRRT</h2>
+        <h3>New Treandy prints</h3>
+        <!-- <button class="button4">Collection</button> -->
+    </div>
+
+</section>
+
+
+
+
+
+{% comment %}  for the footer section bytheway footer is allready create a anoter folder there are include using a single line{% endcomment %}
+
+
+{% include "Footer.html" %}
+
+
+
+    <script src="Script.js"></script>
+</body>
+</html>
